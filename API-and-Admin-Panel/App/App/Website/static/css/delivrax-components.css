@@ -1,0 +1,386 @@
+/* ============================================
+   DelivraX Component Styles for Website
+   X-Connect: Power, Connection, Speed
+   Modern UI components with brand identity
+   ============================================ */
+
+/* ========================================
+   BUTTONS - Gradient & Interactive
+   ======================================== */
+.btn-delivrax-primary {
+  background: linear-gradient(90deg, #00A2E5 0%, #7B42F6 100%);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 162, 229, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-delivrax-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(123, 66, 246, 0.5);
+  color: white;
+}
+
+.btn-delivrax-primary:active {
+  transform: translateY(-1px);
+}
+
+.btn-delivrax-outline {
+  background: transparent;
+  border: 2px solid #00A2E5;
+  border-radius: 10px;
+  color: #00A2E5;
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-delivrax-outline:hover {
+  background: linear-gradient(90deg, #00A2E5 0%, #7B42F6 100%);
+  border-color: transparent;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 162, 229, 0.4);
+}
+
+/* ========================================
+   CARDS - Modern Depth
+   ======================================== */
+.card-delivrax {
+  background: white;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(10, 10, 10, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.card-delivrax:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(10, 10, 10, 0.15);
+}
+
+.card-delivrax-gradient {
+  background: linear-gradient(135deg, #00A2E5 0%, #7B42F6 100%);
+  color: white;
+}
+
+.card-delivrax-header {
+  padding: 1.5rem;
+  border-bottom: 2px solid #F5F6F8;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.card-delivrax-body {
+  padding: 1.5rem;
+}
+
+/* ========================================
+   NAVBAR ENHANCEMENTS
+   ======================================== */
+.navbar-delivrax {
+  background: white;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.navbar-delivrax.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+}
+
+.nav-link-delivrax {
+  color: #0A0A0A;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link-delivrax::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #00A2E5 0%, #7B42F6 100%);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.nav-link-delivrax:hover::after,
+.nav-link-delivrax.active::after {
+  width: 100%;
+}
+
+.nav-link-delivrax:hover {
+  color: #00A2E5;
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+.hero-delivrax {
+  background: linear-gradient(135deg, #00A2E5 0%, #7B42F6 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-delivrax::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+  opacity: 0.3;
+}
+
+.hero-delivrax-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* ========================================
+   FEATURE BOXES
+   ======================================== */
+.feature-box-delivrax {
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(10, 10, 10, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+}
+
+.feature-box-delivrax:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 162, 229, 0.2);
+}
+
+.feature-icon-delivrax {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(135deg, #00A2E5 0%, #7B42F6 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 162, 229, 0.3);
+}
+
+/* ========================================
+   BADGES & TAGS
+   ======================================== */
+.badge-delivrax {
+  background: linear-gradient(90deg, #00A2E5 0%, #7B42F6 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  display: inline-block;
+}
+
+.badge-delivrax-outline {
+  background: transparent;
+  border: 2px solid #00A2E5;
+  color: #00A2E5;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+/* ========================================
+   FORMS & INPUTS
+   ======================================== */
+.form-control-delivrax {
+  border: 2px solid #E0E0E0;
+  border-radius: 10px;
+  padding: 0.875rem 1.25rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-control-delivrax:focus {
+  border-color: #7B42F6;
+  box-shadow: 0 0 0 0.2rem rgba(123, 66, 246, 0.25);
+  outline: none;
+}
+
+/* ========================================
+   GRADIENT TEXT
+   ======================================== */
+.text-gradient-delivrax {
+  background: linear-gradient(90deg, #00A2E5 0%, #7B42F6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+/* ========================================
+   SECTION DIVIDERS
+   ======================================== */
+.divider-delivrax {
+  height: 4px;
+  width: 80px;
+  background: linear-gradient(90deg, #00A2E5 0%, #7B42F6 100%);
+  border-radius: 2px;
+  margin: 1.5rem auto;
+}
+
+/* ========================================
+   LOADING SPINNER
+   ======================================== */
+.spinner-delivrax {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #F5F6F8;
+  border-top: 4px solid #00A2E5;
+  border-right: 4px solid #7B42F6;
+  border-radius: 50%;
+  animation: spin-delivrax 1s linear infinite;
+}
+
+@keyframes spin-delivrax {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ========================================
+   TESTIMONIAL CARDS
+   ======================================== */
+.testimonial-delivrax {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(10, 10, 10, 0.08);
+  position: relative;
+  border-left: 4px solid #00A2E5;
+}
+
+.testimonial-delivrax::before {
+  content: '"';
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  font-size: 4rem;
+  color: #7B42F6;
+  opacity: 0.2;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+/* ========================================
+   PRICING CARDS
+   ======================================== */
+.pricing-card-delivrax {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 6px 20px rgba(10, 10, 10, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-card-delivrax:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(0, 162, 229, 0.2);
+}
+
+.pricing-card-delivrax.featured {
+  border: 3px solid #00A2E5;
+}
+
+.pricing-card-delivrax.featured::before {
+  content: 'POPULAR';
+  position: absolute;
+  top: 20px;
+  right: -30px;
+  background: linear-gradient(90deg, #00A2E5 0%, #7B42F6 100%);
+  color: white;
+  padding: 5px 40px;
+  transform: rotate(45deg);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+/* ========================================
+   FOOTER ENHANCEMENTS
+   ======================================== */
+.footer-delivrax {
+  background: linear-gradient(180deg, #0A0A0A 0%, #1a1a1a 100%);
+  color: white;
+  padding: 4rem 0 2rem;
+}
+
+.footer-delivrax a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.footer-delivrax a:hover {
+  color: #00A2E5;
+  text-decoration: none;
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+.bg-delivrax-gradient {
+  background: linear-gradient(135deg, #00A2E5 0%, #7B42F6 100%);
+}
+
+.bg-delivrax-neutral {
+  background-color: #F5F6F8;
+}
+
+.text-delivrax-primary {
+  color: #00A2E5;
+}
+
+.text-delivrax-electric {
+  color: #7B42F6;
+}
+
+.shadow-delivrax {
+  box-shadow: 0 6px 20px rgba(10, 10, 10, 0.08);
+}
+
+.shadow-delivrax-lg {
+  box-shadow: 0 10px 40px rgba(10, 10, 10, 0.12);
+}

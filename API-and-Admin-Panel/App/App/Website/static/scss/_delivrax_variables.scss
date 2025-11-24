@@ -1,0 +1,126 @@
+// DelivraX Brand System - Complete Design Tokens
+// This file is imported before the project's variables.scss so it overrides defaults
+// X-Connect: Power, Connection, Speed
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+// ========================================
+// BRAND COLORS - DelivraX Identity
+// ========================================
+$delivrax-primary: #00A2E5 !default; // Trust Blue - reliability, technology
+$delivrax-electric: #7B42F6 !default; // Electric Purple - innovation, energy
+$delivrax-gradient: linear-gradient(90deg, #00A2E5 0%, #7B42F6 100%) !default; // Connection flow
+$delivrax-gradient-vertical: linear-gradient(180deg, #00A2E5 0%, #7B42F6 100%) !default;
+$delivrax-gradient-radial: radial-gradient(circle at top left, #00A2E5 0%, #7B42F6 100%) !default;
+
+// Neutral & Background
+$delivrax-neutral: #F5F6F8 !default; // Light neutral background
+$delivrax-muted: #EEEEEE !default; // Muted elements
+$delivrax-dark: #0A0A0A !default; // Near black for text
+$delivrax-white: #FFFFFF !default; // Pure white
+
+// Semantic colors (maintain for alerts/status)
+$delivrax-success: #1cc88a !default;
+$delivrax-warning: #f6c23e !default;
+$delivrax-danger: #e74a3b !default;
+$delivrax-info: #36b9cc !default;
+
+// Color variations for depth
+$delivrax-primary-light: lighten($delivrax-primary, 10%) !default;
+$delivrax-primary-dark: darken($delivrax-primary, 10%) !default;
+$delivrax-electric-light: lighten($delivrax-electric, 10%) !default;
+$delivrax-electric-dark: darken($delivrax-electric, 10%) !default;
+
+// ========================================
+// TYPOGRAPHY - Modern, Geometric Sans-Serif
+// ========================================
+$font-family-sans-serif: "Poppins", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
+$headings-font-family: $font-family-sans-serif !default;
+$font-family-monospace: "SF Mono", "Monaco", "Inconsolata", "Fira Code", "Droid Sans Mono", "Source Code Pro", monospace !default;
+
+// Font weights
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-extrabold: 800 !default;
+
+// ========================================
+// SPACING & LAYOUT
+// ========================================
+$brand-radius: 10px !default; // Smooth rounded corners
+$brand-radius-sm: 6px !default;
+$brand-radius-lg: 16px !default;
+$brand-radius-xl: 24px !default;
+
+// Shadows for depth
+$brand-shadow: 0 6px 20px rgba(10, 10, 10, 0.08) !default;
+$brand-shadow-sm: 0 2px 8px rgba(10, 10, 10, 0.06) !default;
+$brand-shadow-lg: 0 10px 40px rgba(10, 10, 10, 0.12) !default;
+$brand-shadow-xl: 0 20px 60px rgba(10, 10, 10, 0.15) !default;
+
+// Glow effects for interactive elements
+$brand-glow-primary: 0 0 20px rgba(0, 162, 229, 0.4) !default;
+$brand-glow-electric: 0 0 20px rgba(123, 66, 246, 0.4) !default;
+
+// ========================================
+// COMPONENT TOKENS
+// ========================================
+// Buttons
+$btn-border-radius: $brand-radius !default;
+$btn-padding-y: 0.75rem !default;
+$btn-padding-x: 1.5rem !default;
+$btn-font-weight: $font-weight-semibold !default;
+
+// Cards
+$card-border-radius: $brand-radius-lg !default;
+$card-box-shadow: $brand-shadow !default;
+
+// Inputs
+$input-border-radius: $brand-radius-sm !default;
+$input-focus-border-color: $delivrax-electric !default;
+$input-focus-box-shadow: 0 0 0 0.2rem rgba(123, 66, 246, 0.25) !default;
+
+// ========================================
+// MAP TO BOOTSTRAP/FRAMEWORK VARIABLES
+// ========================================
+$primary: $delivrax-primary !default;
+$secondary: #6c757d !default;
+$success: $delivrax-success !default;
+$info: $delivrax-info !default;
+$warning: $delivrax-warning !default;
+$danger: $delivrax-danger !default;
+$light: $delivrax-neutral !default;
+$dark: $delivrax-dark !default;
+
+$body-bg: $delivrax-neutral !default;
+$body-color: $delivrax-dark !default;
+
+// ========================================
+// CSS CUSTOM PROPERTIES (Runtime Variables)
+// ========================================
+:root {
+  // Brand colors
+  --delivrax-primary: #00A2E5;
+  --delivrax-electric: #7B42F6;
+  --delivrax-gradient: linear-gradient(90deg, var(--delivrax-primary) 0%, var(--delivrax-electric) 100%);
+  --delivrax-gradient-vertical: linear-gradient(180deg, var(--delivrax-primary) 0%, var(--delivrax-electric) 100%);
+  --delivrax-neutral: #F5F6F8;
+  --delivrax-dark: #0A0A0A;
+  --delivrax-white: #FFFFFF;
+  
+  // Shadows & effects
+  --brand-shadow: 0 6px 20px rgba(10, 10, 10, 0.08);
+  --brand-shadow-lg: 0 10px 40px rgba(10, 10, 10, 0.12);
+  --brand-glow-primary: 0 0 20px rgba(0, 162, 229, 0.4);
+  --brand-glow-electric: 0 0 20px rgba(123, 66, 246, 0.4);
+  
+  // Border radius
+  --brand-radius: 10px;
+  --brand-radius-lg: 16px;
+  
+  // Transitions
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.15s ease-in-out;
+}

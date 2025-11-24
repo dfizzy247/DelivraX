@@ -1,0 +1,451 @@
+/* ============================================
+   DelivraX Homepage Gradient Styling
+   Matches admin panel gradient aesthetic
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;600;700&display=swap');
+
+/* ========================================
+   CSS CUSTOM PROPERTIES - DelivraX Tokens
+   ======================================== */
+:root {
+  /* Brand colors */
+  --dx-primary: #00A2E5;
+  --dx-electric: #7B42F6;
+  --dx-dark-variant: #0082B8;
+  --dx-gradient: linear-gradient(90deg, var(--dx-primary) 0%, var(--dx-electric) 100%);
+  --dx-gradient-vertical: linear-gradient(180deg, var(--dx-primary) 0%, var(--dx-electric) 100%);
+  --dx-neutral: #F5F6F8;
+  --dx-dark: #0A0A0A;
+  --dx-white: #FFFFFF;
+  
+  /* Shadows & effects */
+  --dx-shadow: 0 6px 20px rgba(10, 10, 10, 0.08);
+  --dx-shadow-lg: 0 10px 40px rgba(10, 10, 10, 0.12);
+  
+  /* Border radius */
+  --dx-radius: 10px;
+  --dx-radius-sm: 6px;
+  --dx-radius-lg: 16px;
+  
+  /* Transitions */
+  --dx-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ========================================
+   MASTHEAD - Hero Section with Gradient
+   ======================================== */
+header.masthead {
+  background: var(--dx-gradient-vertical) !important;
+  position: relative;
+  min-height: 600px;
+}
+
+header.masthead::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../img/bg-masthead.jpg") center/cover;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+header.masthead > div {
+  position: relative;
+  z-index: 1;
+}
+
+header.masthead h1, 
+header.masthead .h1 {
+  color: var(--dx-white) !important;
+  font-weight: 700 !important;
+  font-size: 3.5rem !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  letter-spacing: -0.5px;
+}
+
+header.masthead p {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 300 !important;
+  font-size: 1.1rem !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.15) !important;
+}
+
+header.masthead hr {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  border-width: 3px !important;
+  width: 60px !important;
+}
+
+/* ========================================
+   CTA BUTTONS - Blue text, white background, gradient on hover
+   ======================================== */
+.btn-primary,
+.btn-light,
+.btn {
+  background: var(--dx-white) !important;
+  border: 2px solid var(--dx-white) !important;
+  color: var(--dx-primary) !important;
+  border-radius: var(--dx-radius) !important;
+  font-weight: 700 !important;
+  padding: 0.75rem 2rem !important;
+  transition: var(--dx-transition) !important;
+  box-shadow: 0 4px 15px rgba(0, 162, 229, 0.2) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-light:hover,
+.btn-light:focus,
+.btn:hover,
+.btn:focus {
+  background: var(--dx-gradient) !important;
+  border-color: var(--dx-gradient) !important;
+  color: var(--dx-white) !important;
+  box-shadow: 0 6px 25px rgba(123, 66, 246, 0.5) !important;
+  transform: translateY(-3px) !important;
+}
+
+.btn-primary:active,
+.btn-light:active,
+.btn:active {
+  transform: translateY(-1px) !important;
+}
+
+.btn-xl {
+  padding: 1.2rem 2.5rem !important;
+  font-size: 1.1rem !important;
+}
+
+/* ========================================
+   PAGE SECTIONS - Gradient accents
+   ======================================== */
+.page-section {
+  padding: 5rem 0 !important;
+}
+
+.page-section h2,
+.page-section .h2 {
+  color: var(--dx-dark) !important;
+  font-weight: 700 !important;
+  font-size: 2.5rem !important;
+}
+
+.page-section hr.divider {
+  border-color: var(--dx-primary) !important;
+  border-width: 3px !important;
+  width: 60px !important;
+  margin: 1.5rem auto !important;
+}
+
+.page-section hr.divider.light {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* About section with gradient primary background */
+#about.page-section.bg-primary {
+  background: var(--dx-gradient-vertical) !important;
+  color: var(--dx-white) !important;
+}
+
+#about h2,
+#about .h2 {
+  color: var(--dx-white) !important;
+}
+
+#about p {
+  color: rgba(255, 255, 255, 0.85) !important;
+  line-height: 1.8;
+}
+
+#about .btn-light {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Services section styling */
+#services .col-lg-3 {
+  transition: var(--dx-transition) !important;
+}
+
+#services .col-lg-3:hover {
+  transform: translateY(-8px) !important;
+}
+
+#services .fa-4x {
+  color: var(--dx-primary) !important;
+}
+
+#services h3 {
+  color: var(--dx-dark) !important;
+  font-weight: 600 !important;
+}
+
+#services p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* ========================================
+   NAVBAR - Clean modern style
+   ======================================== */
+.navbar-light {
+  background-color: var(--dx-white) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+  transition: var(--dx-transition) !important;
+}
+
+.navbar-light.scrolled {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+.navbar-brand {
+  font-weight: 700 !important;
+  color: var(--dx-primary) !important;
+  font-size: 1.4rem !important;
+}
+
+.navbar-brand img {
+  transition: var(--dx-transition) !important;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.05) !important;
+}
+
+.navbar-nav .nav-link {
+  color: var(--dx-dark) !important;
+  font-weight: 500 !important;
+  margin-left: 1rem !important;
+  transition: var(--dx-transition) !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--dx-primary) !important;
+}
+
+/* ========================================
+   TYPOGRAPHY - Modern fonts
+   ======================================== */
+body {
+  font-family: "Inter", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  color: var(--dx-dark) !important;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Poppins", "Inter", sans-serif !important;
+  font-weight: 600 !important;
+}
+
+/* ========================================
+   UTILITIES & MISC
+   ======================================== */
+.text-primary {
+  color: var(--dx-primary) !important;
+}
+
+a {
+  color: var(--dx-primary) !important;
+  transition: var(--dx-transition) !important;
+}
+
+a:hover,
+a:focus {
+  color: var(--dx-electric) !important;
+  text-decoration: none !important;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========================================
+   GET A QUOTE SECTION - Professional form styling
+   ======================================== */
+#quote.page-section {
+  background: linear-gradient(135deg, #0A0A0A 0%, #1a1a2e 100%) !important;
+  padding: 6rem 0 !important;
+}
+
+#quote .container {
+  max-width: 720px !important;
+  background: rgba(255, 255, 255, 0.98) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3) !important;
+  padding: 3.5rem 3rem !important;
+  margin-top: 0 !important;
+}
+
+#quote h2 {
+  color: var(--dx-dark) !important;
+  font-size: 2.8rem !important;
+  margin-bottom: 2rem !important;
+  font-weight: 800 !important;
+  position: relative;
+  padding-bottom: 1.5rem !important;
+}
+
+#quote h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: var(--dx-gradient);
+  border-radius: 2px;
+}
+
+#quote .text-center {
+  text-align: center !important;
+}
+
+#quote form {
+  margin-top: 2.5rem !important;
+}
+
+#quote .form-group {
+  margin-bottom: 1.8rem !important;
+  text-align: left !important;
+}
+
+#quote label {
+  color: var(--dx-dark) !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.7rem !important;
+  font-size: 0.95rem !important;
+  display: block !important;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+#quote .form-control,
+#quote select {
+  background: var(--dx-neutral) !important;
+  border: 2px solid #e0e0e0 !important;
+  border-radius: 10px !important;
+  padding: 0.85rem 1.2rem !important;
+  font-size: 0.95rem !important;
+  transition: var(--dx-transition) !important;
+  color: var(--dx-dark) !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+#quote .form-control:focus,
+#quote select:focus {
+  background: var(--dx-white) !important;
+  border-color: var(--dx-primary) !important;
+  box-shadow: 0 0 0 3px rgba(0, 162, 229, 0.15) !important;
+  color: var(--dx-dark) !important;
+  outline: none !important;
+}
+
+#quote .form-control::placeholder {
+  color: #999 !important;
+}
+
+#quote .form-group.row {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 1.5rem !important;
+  margin-bottom: 0 !important;
+}
+
+#quote .form-group.row .col-sm {
+  margin-bottom: 0 !important;
+}
+
+#quote .form-group.row .form-group {
+  margin-bottom: 0 !important;
+}
+
+#quote .row:not(.form-group) {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 1.5rem !important;
+  margin-bottom: 1.8rem !important;
+}
+
+#quote .row:not(.form-group) > .col-sm {
+  margin-bottom: 0 !important;
+}
+
+#quote .row:not(.form-group) .form-group {
+  margin-bottom: 0 !important;
+}
+
+#quote textarea.form-control {
+  resize: vertical !important;
+  min-height: 130px !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+#quote .btn {
+  width: 100% !important;
+  padding: 1.1rem 2rem !important;
+  font-size: 1.1rem !important;
+  margin-top: 2rem !important;
+  letter-spacing: 1.2px !important;
+  border-radius: 12px !important;
+}
+
+/* ========================================
+   RESPONSIVE - Mobile adjustments
+   ======================================== */
+@media (max-width: 768px) {
+  header.masthead {
+    min-height: 400px;
+  }
+  
+  header.masthead h1, 
+  header.masthead .h1 {
+    font-size: 2rem !important;
+  }
+  
+  header.masthead p {
+    font-size: 1rem !important;
+  }
+  
+  .page-section h2,
+  .page-section .h2 {
+    font-size: 2rem !important;
+  }
+  
+  .btn-xl {
+    padding: 0.9rem 1.8rem !important;
+    font-size: 1rem !important;
+  }
+  
+  .navbar-nav .nav-link {
+    margin-left: 0 !important;
+    padding: 0.5rem 0 !important;
+  }
+  
+  #quote .container {
+    padding: 2.5rem 1.5rem !important;
+    margin: 1.5rem !important;
+  }
+  
+  #quote h2 {
+    font-size: 2rem !important;
+  }
+  
+  #quote .form-group.row,
+  #quote .row:not(.form-group) {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  
+  #quote .btn {
+    width: 100% !important;
+  }
+}

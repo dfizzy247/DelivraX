@@ -1,0 +1,365 @@
+/* ============================================
+   DelivraX Modal Styling - Professional Forms
+   ============================================ */
+
+/* Modal Dialog Sizing */
+.modal-dialog.modal-xl {
+    max-width: 90%;
+    margin: 1.75rem auto;
+}
+
+/* Modal Content */
+.modal-content {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Header */
+.modal-header {
+    background: linear-gradient(135deg, #00A2E5 0%, #7B42F6 100%);
+    color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 1.5rem 2rem;
+    border-bottom: none;
+}
+
+.modal-header .modal-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.modal-header .close {
+    color: white;
+    opacity: 0.9;
+    text-shadow: none;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 0;
+    margin: -1rem -1rem -1rem auto;
+}
+
+.modal-header .close:hover {
+    opacity: 1;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 2.5rem;
+    background-color: #f8f9fc;
+}
+
+.modal-body form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Rows */
+.modal-body .row {
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.modal-body .row:last-child {
+    margin-bottom: 0;
+}
+
+/* Form Labels */
+.modal-body label {
+    font-weight: 600;
+    color: #5a5c69;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    display: block;
+    letter-spacing: 0.3px;
+}
+
+/* Form Inputs */
+.modal-body .form-control {
+    border: 2px solid #e3e6f0;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.modal-body .form-control:focus {
+    border-color: #00A2E5;
+    box-shadow: 0 0 0 0.2rem rgba(0, 162, 229, 0.15);
+    background-color: #fff;
+}
+
+.modal-body .form-control:disabled {
+    background-color: #f1f3f5;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Input Groups (for date pickers) */
+.modal-body .input-group {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.modal-body .input-group .form-control {
+    border-right: none;
+}
+
+.modal-body .input-group-text {
+    background-color: #00A2E5;
+    color: white;
+    border: 2px solid #00A2E5;
+    border-left: none;
+    padding: 0.75rem 1rem;
+}
+
+.modal-body .input-group-text i {
+    font-size: 1rem;
+}
+
+/* Column Spacing */
+.modal-body .col-sm {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+/* Ensure first and last columns in each row have proper margins */
+.modal-body .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 1.5rem 2.5rem;
+    background-color: #f8f9fc;
+    border-top: 1px solid #e3e6f0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Modal Buttons */
+.modal-footer .btn {
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+}
+
+.modal-footer .btn-primary {
+    background: linear-gradient(135deg, #00A2E5 0%, #0088c7 100%);
+    box-shadow: 0 4px 12px rgba(0, 162, 229, 0.3);
+}
+
+.modal-footer .btn-primary:hover {
+    background: linear-gradient(135deg, #0088c7 0%, #006fa3 100%);
+    box-shadow: 0 6px 16px rgba(0, 162, 229, 0.4);
+    transform: translateY(-2px);
+}
+
+.modal-footer .btn-danger {
+    background: linear-gradient(135deg, #e74a3b 0%, #d32f2f 100%);
+    box-shadow: 0 4px 12px rgba(231, 74, 59, 0.3);
+}
+
+.modal-footer .btn-danger:hover {
+    background: linear-gradient(135deg, #d32f2f 0%, #c62828 100%);
+    box-shadow: 0 6px 16px rgba(231, 74, 59, 0.4);
+    transform: translateY(-2px);
+}
+
+.modal-footer .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* Section Dividers */
+.modal-body hr {
+    margin: 2rem 0;
+    border-top: 2px solid #e3e6f0;
+}
+
+/* Field Groups */
+.field-group {
+    background-color: #f8f9fc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.field-group-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #5a5c69;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #00A2E5;
+}
+
+/* Required Field Indicator */
+.required-field label::after {
+    content: " *";
+    color: #e74a3b;
+    font-weight: bold;
+}
+
+/* Help Text */
+.form-text {
+    font-size: 0.85rem;
+    color: #858796;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .modal-dialog.modal-xl {
+        max-width: 95%;
+        margin: 0.5rem auto;
+    }
+    
+    .modal-body {
+        padding: 1.5rem;
+    }
+    
+    .modal-body form {
+        padding: 1.5rem;
+    }
+    
+    .modal-body .row {
+        margin-bottom: 1rem;
+    }
+    
+    .modal-body .col-sm {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .modal-footer {
+        padding: 1rem 1.5rem;
+    }
+    
+    .modal-footer .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Animation */
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: none;
+}
+
+/* Empty State Message */
+.alert-info {
+    background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);
+    border: none;
+    border-left: 4px solid #00A2E5;
+    color: #0c5460;
+    padding: 1.25rem;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+/* Validation States */
+.form-control.is-invalid {
+    border-color: #e74a3b;
+}
+
+.form-control.is-valid {
+    border-color: #1cc88a;
+}
+
+.invalid-feedback,
+.valid-feedback {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+/* Select Dropdowns */
+.modal-body select.form-control {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%235a5c69' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 12px;
+    padding-right: 2.5rem;
+}
+
+/* Checkbox and Radio Styling */
+.modal-body .form-check {
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.modal-body .form-check-input {
+    margin-top: 0.3rem;
+    cursor: pointer;
+}
+
+.modal-body .form-check-label {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* File Upload Styling */
+.modal-body input[type="file"].form-control {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+/* Textarea Styling */
+.modal-body textarea.form-control {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Loading State */
+.modal-body.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.modal-body.loading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 -20px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #00A2E5;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
