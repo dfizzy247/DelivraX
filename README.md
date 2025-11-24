@@ -413,8 +413,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🏆 Acknowledgments
 
-- **Napier University** - For the Group Project Awards recognition
-- **Original Contributors** - For the foundational codebase
 - **Open Source Community** - For the amazing tools and libraries
 
 ---
